@@ -1,3 +1,2 @@
 # Angularproject
-
-Testing by raju
+This an Angular learner project
