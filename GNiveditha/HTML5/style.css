@@ -1,0 +1,123 @@
+form {
+  padding: 10px 5px 10px ;
+  margin:auto;
+  width:50%;
+  border: 2px solid green;
+}
+h1 {
+  text-align: center;
+}
+
+.firstname {
+  margin-left: 80px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: none;
+}
+
+.secondname {
+  margin-left: 59px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.date {
+  margin-left: 58px;
+  margin-bottom: 10px;
+}
+
+.email {
+  margin-left: 102px;
+  margin-bottom: 10px;
+  border: none;
+}
+.number {
+  margin-left: 40px;
+  margin-bottom: 10px;
+  border: none;
+}
+.gender {
+  margin-left: 107px;
+}
+.address {
+  margin-left: 103px;
+  margin-bottom: 10px;
+}
+#add-div {
+  display: flex;
+}
+.city {
+  margin-top: 10px;
+  margin-left: 135px;
+  margin-bottom: 10px;
+  border: none;
+}
+.pincode {
+  margin-left: 98px;
+  margin-bottom: 10px;
+  border: none;
+}
+.state {
+  margin-left: 125px;
+  margin-bottom: 10px;
+  border: none;
+}
+.country {
+  margin-left: 95px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.hobbies {
+  margin-left: 102px;
+  margin-bottom: 10px;
+}
+.hobbies-others {
+  margin-left: 182px;
+  margin-bottom: 10px;
+}
+.hobbies-others-ip {
+  border: none;
+  margin-bottom: 10px;
+}
+#table-div {
+  display: flex;
+}
+.table {
+  margin-left: 52px;
+  border: 1px solid green;
+}
+th {
+  color: green;
+}
+td {
+  background-color: white;
+  color: green;
+}
+.last-row {
+  background-color: lightgreen;
+}
+.last-row1,
+.last-row2 {
+  background-color: lightgreen;
+  color: green;
+}
+.row1 {
+  background-color: lightgreen;
+}
+.course {
+  margin-left: 69px;
+}
+
+.submit-btn {
+  margin-left: 250px;
+}
+
+form {
+  background-color: lightgreen;
+  color: white;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: lightgreen;
+}
