@@ -1,0 +1,47 @@
+#form {
+  background-color: white;
+  max-width: 500px;
+  padding-left: 10px;
+  border-style: ridge;
+
+}
+
+button {
+  border-radius: 25px;
+  background-color: #0eb477;
+  color: white;
+  padding: 14px 15px;
+  width: 93%;
+  border: 1px solid;
+  font-family: Garamond, serif;
+  font-weight: bold;
+  font-size: 15px;
+
+}
+
+.cancelbtn {
+
+  background-color: #f44336;
+
+}
+
+h3 {
+  color: rgb(29, 12, 87);
+  margin-left: 190px;
+
+
+}
+
+p {
+
+  font-family: "Arial";
+  font-style: italic;
+}
+
+input {
+  padding: 10px 8px;
+  border: 0px solid;
+  background-color: rgb(233, 220, 220);
+  border-radius: 3px;
+
+}
