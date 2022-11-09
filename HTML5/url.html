@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL</title>
+    <!-- <link rel="stylesheet" href="url.css" /> -->
+    <style>
+      .border {
+        background-color: rgb(218, 218, 214);
+
+        box-sizing: border-box;
+        border: 5px solid black;
+        border-style: double;
+        border-radius: 30px;
+        padding: 50px;
+        margin-left: 450px;
+        margin-right: 450px;
+        margin-top: 50px;
+      }
+      .background {
+        background-image: url(img.jpg);
+        background-size: cover;
+        text-align: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+      }
+      h2 {
+        text-decoration: underline;
+        margin-top: 100px;
+      }
+      .text {
+        border: 2px solid black;
+      }
+      .label {
+        font-size: larger;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <h2>URL PAGE</h2>
+      <form class="border">
+        <label class="label"> <b>URL:</b> </label> <br /><input
+          type="url"
+          name="url"
+          id="url"
+          class="text"
+          required
+        />
+        <br />
+
+        <label class="label"> <b>DATE: </b></label><br /><input
+          type="date"
+          name="date"
+          id="date"
+          class="text"
+          required
+        />
+        <br />
+        <br />
+
+        <input type="submit" value="SUBMIT" class="text" />
+      </form>
+    </div>
+  </body>
+</html>
