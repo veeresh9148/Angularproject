@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Assignment</title>
+  </head>
+
+  <body>
+    <h1><u>Forms</u></h1>
+    <div>
+      <form>
+        <div>
+          <label for="fname">FIRST NAME :</label>
+          <input type="text" name="fname" class="firstname" required /> (max 30 characters a-z and
+          A-Z)<br />
+        </div>
+        <label for="sname">SECOND NAME :</label>
+        <input type="text" name="sname" class="secondname" required/> (max 30 characters a-z and
+        A-Z)<br />
+        <label for="date">DATE OF BIRTH :</label>
+
+        <select class="date">
+          <option>Day:</option>
+          <option>Monday</option>
+          <option>Tuesday</option>
+          <option>Wednesday</option>
+          <option>Trursday</option>
+          <option>Friday</option>
+          <option>Saturday</option>
+          <option>Sunday</option>
+        </select>
+        <select>
+          <option>Month:</option>
+          <option>January</option>
+          <option>February</option>
+          <option>March</option>
+          <option>April</option>
+          <option>May</option>
+          <option>June</option>
+          <option>July</option>
+          <option>August</option>
+          <option>September</option>
+          <option>October</option>
+          <option>November</option>
+          <option>December</option>
+        </select>
+        <select>
+          <option>Year:</option>
+          <option>1995</option>
+          <option>1996</option>
+          <option>1997</option>
+          <option>1998</option>
+          <option>1999</option>
+          <option>2000</option>
+          <option>2001</option>
+          <option>2002</option>
+          <option>2003</option>
+          <option>2004</option>
+          <option>2005</option></select
+        ><br />
+
+        <label for="email">EMAIL ID :</label>
+        <input type="email" name="email" class="email" required/><br />
+
+        <label for="number">MOBILE NUMBER :</label>
+        <input name="number" class="number" required/> (10 digit number)<br />
+
+        <label for="gender">GENDER :</label>
+        <label for="female" class="gender" required>Female</label>
+        <input type="radio" id="female" name="common" />
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="common" /><br /><br />
+        <div id="add-div">
+          <label for="address" class="add">ADDRESS :</label>
+          <textarea
+            name="address"
+            id="address"
+            cols="30"
+            rows="5"
+            class="address"
+          ></textarea>
+        </div>
+
+        <label for="city">CITY :</label>
+        <input type="text" name="city" class="city" required/> (max 30 characters a-z and A-Z)<br />
+
+        <label for="pincode">PIN CODE :</label>
+        <input name="pincode" class="pincode" required/> (6 digit number)<br />
+
+        <label for="state">STATE :</label>
+        <input type="text" name="state" class="state" required/> (max 30 characters a-z and A-Z)<br />
+
+        <label for="country">COUNTRY :</label>
+        <input type="text" name="country" class="country" required/><br />
+
+        <label for="Hobbies">HOBBIES : </label>
+        <label for="drawing" class="hobbies">Drawing</label>
+        <input type="checkbox" name="drawing" />
+        <label for="singing">Singing</label>
+        <input type="checkbox" name="singing" />
+        <label for="dancing">Dancing</label>
+        <input type="checkbox" name="dancing" />
+        <label for="sketching">Sketching</label>
+        <input type="checkbox" name="sketching" /><br />
+        <label for="others" class="hobbies-others">Others</label>
+        <input type="checkbox" name="others" />
+        <input type="text" class="hobbies-others-ip" /><br />
+
+        
+        <div id="table-div">
+          <label>QUALIFICATION :</label>
+          <table class="table">
+            <tr>
+              <th class="row2">SL.No.</th>
+              <th class="row2">Examination</th>
+              <th>Board</th>
+              <th>Percentage</th>
+              <th>Year Of Passing</th>
+            </tr>
+
+            <tr>
+              <td class="row1">1</td>
+              <td class="row1">Class X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="row1">2</td>
+              <td class="row1">Class XII</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="row1">3</td>
+              <td class="row1">Graduation</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="row1">4</td>
+              <td class="row1">Masters</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="last-row"></td>
+              <td class="last-row"></td>
+              <td class="last-row1">(10 char max)</td>
+              <td class="last-row2">(upto 2 decimal)</td>
+              <td class="last-row"></td>
+            </tr>
+          </table>
+        </div>
+        <br />
+
+        <label for="courses">COURSES <br />APPLIED FOR :</label>
+        <label for="bca" class="course">BCA</label>
+        <input type="radio" id="bca" name="common" />
+        <label for="bcom">B.Com</label>
+        <input type="radio" id="bcom" name="common" />
+        <label for="bsc">B.Sc</label>
+        <input type="radio" id="bsc" name="common" />
+        <label for="ba">B.A</label>
+        <input type="radio" id="ba" name="common" /><br /><br />
+
+        <button type="submit" class="submit-btn">Submit</button>
+        <button type="reset" class="reset-btn">Reset</button>
+      </form>
+    </div>
+  </body>
+</html>
