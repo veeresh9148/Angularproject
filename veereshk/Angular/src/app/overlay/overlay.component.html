@@ -1,4 +1,10 @@
-
-<app-add-item (AddItemEvent)="AddItem($event)" [inpEnabled]="isEnabled"></app-add-item>
-<app-item-list (DeleteItemEvent)="EmitStatus($event)" [listitem]="AddedItemlist" (CartItemEvent)="CartItem($event)"></app-item-list>
+<app-add-item
+  (AddItemEvent)="AddItem($event)"
+  [inpEnabled]="isEnabled"
+></app-add-item>
+<app-item-list
+  (DeleteItemEvent)="EmitStatus($event)"
+  [listitem]="AddedItemlist"
+  (CartItemEvent)="CartItem($event)"
+></app-item-list>
 <app-cart-list [cartlist]="CartItemlist"></app-cart-list>

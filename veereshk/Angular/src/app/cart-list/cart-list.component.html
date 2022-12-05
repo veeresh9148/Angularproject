@@ -11,15 +11,18 @@
     </thead>
     <tbody>
       <tr *ngFor="let i of cartlist; index as Cartno">
-        <td>{{Cartno + 1}}</td>
-        <td>{{i}}</td>
+        <td>{{ Cartno + 1 }}</td>
+        <td>{{ i }}</td>
         <td>
-          <button (click)="onDeleteCart(Cartno)" class="btn btn-danger">Remove Item</button>
-        </td> 
-        <td>
-          <button (click)="onPurchase(Cartno)"class="btn btn-success">Purchase</button>
+          <button (click)="onDeleteCart(Cartno)" class="btn btn-danger">
+            Remove Item
+          </button>
         </td>
-
+        <td>
+          <button (click)="onPurchase(Cartno)" class="btn btn-success">
+            Purchase
+          </button>
+        </td>
       </tr>
     </tbody>
   </table>
