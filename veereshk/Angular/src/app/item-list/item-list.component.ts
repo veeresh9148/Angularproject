@@ -15,7 +15,6 @@ export class ItemListComponent {
 
   @Output() DeleteItemEvent = new EventEmitter<string[]>();
   DeleteItem(remove) {
-    //this.listitem.splice(remove,1)
     if (this.listitem.splice(remove, 1)) {
       this.DeleteItemEvent.emit(this.listitem);
       this.toastr.success('Item Deleted Successfully');

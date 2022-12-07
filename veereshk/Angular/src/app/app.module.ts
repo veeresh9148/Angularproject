@@ -10,28 +10,22 @@ import { ItemListComponent } from './item-list/item-list.component';
 import { CartListComponent } from './cart-list/cart-list.component';
 import { ToastrModule } from 'ngx-toastr';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
     OverlayComponent,
     AddItemComponent,
     ItemListComponent,
-    CartListComponent
+    CartListComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
-
-
-
- 
+export class AppModule {}

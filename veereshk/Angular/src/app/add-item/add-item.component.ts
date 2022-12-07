@@ -1,10 +1,4 @@
-import {
-  Component,
-  Output,
-  EventEmitter,
-  Input,
-  ViewChild,
-} from '@angular/core';
+import { Component, Output, EventEmitter, Input } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
 @Component({
   selector: 'app-add-item',

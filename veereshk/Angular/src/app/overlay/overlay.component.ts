@@ -25,15 +25,11 @@ export class OverlayComponent {
     }
   }
 
-  //Deleted Item
+  //after Delete Item Add Button Enabled
   EmitStatus(event) {
     console.log(event);
     this.isEnabled = false;
   }
-
-  //  DeleteItem(remove){
-  //   this.AddedItemlist.splice(remove)
-  // }
 
   CartItem(Cart: string) {
     console.log(Cart);

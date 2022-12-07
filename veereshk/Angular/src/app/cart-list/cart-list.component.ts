@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
-//import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-cart-list',
