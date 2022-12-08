@@ -8,17 +8,17 @@ import { ToastrService } from 'ngx-toastr';
 export class OverlayComponent {
   constructor(private toastr: ToastrService) {}
   isEnabled: boolean = false;
-  AddedItemlist: string[] = [];
+  addedItemlist: string[] = [];
 
-  CartItemlist: string[] = [];
-  AddItem(AddItem: string) {
-    if (this.AddedItemlist.includes(AddItem)) {
+  cartItemlist: string[] = [];
+  addItem(addItem: string) {
+    if (this.addedItemlist.includes(addItem)) {
       this.toastr.error('This Item is Already Exist');
-    } else if (this.AddedItemlist.length == 6) {
+    } else if (this.addedItemlist.length == 6) {
       this.isEnabled = true;
       this.toastr.error('6 Items Only Allowed');
-    } else if (this.AddedItemlist.length != 6) {
-      this.AddedItemlist.push(AddItem);
+    } else if (this.addedItemlist.length != 6) {
+      this.addedItemlist.push(addItem);
       this.toastr.success('Item Added Successfully...');
     } else {
       this.isEnabled = false;
@@ -26,13 +26,13 @@ export class OverlayComponent {
   }
 
   //after Delete Item Add Button Enabled
-  EmitStatus(event) {
-    console.log(event);
-    this.isEnabled = false;
+  emitStatus(event) {
+    if (event) {
+      this.isEnabled = false;
+    }
   }
 
-  CartItem(Cart: string) {
-    console.log(Cart);
-    this.CartItemlist.push(Cart);
+  cartItem(cart: string) {
+    this.cartItemlist.push(cart);
   }
 }

@@ -11,21 +11,20 @@ export class ItemListComponent {
 
   title = 'Angular-Assignment-1';
 
-  @Input() listitem: string[] = [];
+  @Input() listItem: string[] = [];
 
-  @Output() DeleteItemEvent = new EventEmitter<string[]>();
-  DeleteItem(remove) {
-    if (this.listitem.splice(remove, 1)) {
-      this.DeleteItemEvent.emit(this.listitem);
+  @Output() deleteItemEvent = new EventEmitter<string[]>();
+  deleteItem(remove) {
+    if (this.listItem.splice(remove, 1)) {
+      this.deleteItemEvent.emit(this.listItem);
       this.toastr.success('Item Deleted Successfully');
     }
   }
 
-  @Output() CartItemEvent = new EventEmitter<string>();
+  @Output() cartItemEvent = new EventEmitter<string>();
 
-  CartItem(cart) {
-    //console.log(cart)
-    this.CartItemEvent.emit(cart);
+  cartItem(cart) {
+    this.cartItemEvent.emit(cart);
     this.toastr.success('Item Added into Cart');
   }
 }

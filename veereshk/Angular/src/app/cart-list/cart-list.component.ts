@@ -9,15 +9,14 @@ import { ToastrService } from 'ngx-toastr';
 export class CartListComponent {
   constructor(private toastr: ToastrService) {}
 
-  @Input() cartlist;
-  //deleted only cart items
-  onDeleteCart(Cart) {
-    this.cartlist.splice(Cart, 1);
+  @Input() cartList;
+  onDeleteCart(cart) {
+    this.cartList.splice(cart, 1);
     this.toastr.success('Cart Item Deleted Successfully');
   }
 
-  onPurchase(Cart) {
-    this.cartlist.splice(Cart, 1);
+  onPurchase(cart) {
+    this.cartList.splice(cart, 1);
     this.toastr.success('Thanks for Visiting...Item Purchased Successfully...');
   }
 }

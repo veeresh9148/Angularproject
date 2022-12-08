@@ -9,16 +9,15 @@ export class AddItemComponent {
   constructor(private toastr: ToastrService) {}
   @Input() inpEnabled;
   Items = 'Enter Item Name';
-  @Output() AddItemEvent = new EventEmitter<string>();
+  @Output() addItemEvent = new EventEmitter<string>();
   inpValue: string = '';
   handleClick(event) {
-    console.log(event);
     if (!this.inpValue) {
       this.toastr.error('Item Name is required');
     } else if (!/^[a-zA-Z]*$/.test(this.inpValue)) {
       this.toastr.error('Please Enter Valid Item Name');
     } else {
-      this.AddItemEvent.emit(event);
+      this.addItemEvent.emit(event);
     }
   }
 }

@@ -1,4 +1,4 @@
-<div class="container mt-5 bg-info" *ngIf="listitem.length != 0">
+<div class="container mt-5 bg-info" *ngIf="listItem.length != 0">
   <h3>Added Item List</h3>
 
   <table class="table mt-3">
@@ -11,16 +11,16 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let i of listitem; index as listitemno">
-        <td>{{ listitemno + 1 }}</td>
+      <tr *ngFor="let i of listItem; index as listItemNo">
+        <td>{{ listItemNo + 1 }}</td>
         <td>{{ i }}</td>
         <td>
-          <button (click)="DeleteItem(i)" class="btn btn-danger">
+          <button (click)="deleteItem(i)" class="btn btn-danger">
             Remove Item
           </button>
         </td>
         <td>
-          <button (click)="CartItem(i)" class="btn btn-primary">
+          <button (click)="cartItem(i)" class="btn btn-primary">
             Cart Item
           </button>
         </td>
@@ -28,4 +28,3 @@
     </tbody>
   </table>
 </div>
-<br /><br />
