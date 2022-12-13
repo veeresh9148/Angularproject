@@ -11,13 +11,13 @@ export class AddItemComponent {
   Items = 'Enter Item Name';
   @Output() addItemEvent = new EventEmitter<string>();
   inpValue: string = '';
-  handleClick(event) {
+  onClickHandler() {
     if (!this.inpValue) {
       this.toastr.error('Item Name is required');
     } else if (!/^[a-zA-Z]*$/.test(this.inpValue)) {
       this.toastr.error('Please Enter Valid Item Name');
     } else {
-      this.addItemEvent.emit(event);
+      this.addItemEvent.emit(this.inpValue);
     }
   }
 }

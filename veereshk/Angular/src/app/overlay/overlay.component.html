@@ -1,10 +1,10 @@
 <app-add-item
-  (addItemEvent)="addItem($event)"
+  (addItemEvent)="onAddItemHandler($event)"
   [inpEnabled]="isEnabled"
 ></app-add-item>
 <app-item-list
-  (deleteItemEvent)="emitStatus($event)"
+  (deleteItemEvent)="onAfterDelete($event)"
   [listItem]="addedItemlist"
-  (cartItemEvent)="cartItem($event)"
+  (cartItemEvent)="onCartItemListHandler($event)"
 ></app-item-list>
 <app-cart-list [cartList]="cartItemlist"></app-cart-list>

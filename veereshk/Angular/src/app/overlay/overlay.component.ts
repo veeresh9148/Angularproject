@@ -11,7 +11,7 @@ export class OverlayComponent {
   addedItemlist: string[] = [];
 
   cartItemlist: string[] = [];
-  addItem(addItem: string) {
+  onAddItemHandler(addItem: string) {
     if (this.addedItemlist.includes(addItem)) {
       this.toastr.error('This Item is Already Exist');
     } else if (this.addedItemlist.length == 6) {
@@ -25,14 +25,13 @@ export class OverlayComponent {
     }
   }
 
-  //after Delete Item Add Button Enabled
-  emitStatus(event) {
-    if (event) {
+  onAfterDelete(btnStatus) {
+    if (btnStatus) {
       this.isEnabled = false;
     }
   }
 
-  cartItem(cart: string) {
-    this.cartItemlist.push(cart);
+  onCartItemListHandler(item: string) {
+    this.cartItemlist.push(item);
   }
 }

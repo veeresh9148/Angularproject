@@ -14,8 +14,8 @@ export class ItemListComponent {
   @Input() listItem: string[] = [];
 
   @Output() deleteItemEvent = new EventEmitter<string[]>();
-  deleteItem(remove) {
-    if (this.listItem.splice(remove, 1)) {
+  onDeleteItemHandler(itemName) {
+    if (this.listItem.splice(itemName, 1)) {
       this.deleteItemEvent.emit(this.listItem);
       this.toastr.success('Item Deleted Successfully');
     }
@@ -23,7 +23,7 @@ export class ItemListComponent {
 
   @Output() cartItemEvent = new EventEmitter<string>();
 
-  cartItem(cart) {
+  onCartItemHandler(cart) {
     this.cartItemEvent.emit(cart);
     this.toastr.success('Item Added into Cart');
   }

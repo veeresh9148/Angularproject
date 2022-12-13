@@ -10,12 +10,12 @@ export class CartListComponent {
   constructor(private toastr: ToastrService) {}
 
   @Input() cartList;
-  onDeleteCart(cart) {
+  onDeleteCartHandler(cart) {
     this.cartList.splice(cart, 1);
     this.toastr.success('Cart Item Deleted Successfully');
   }
 
-  onPurchase(cart) {
+  onPurchaseHandler(cart) {
     this.cartList.splice(cart, 1);
     this.toastr.success('Thanks for Visiting...Item Purchased Successfully...');
   }
