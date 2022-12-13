@@ -23,8 +23,8 @@ export class ItemListComponent {
 
   @Output() cartItemEvent = new EventEmitter<string>();
 
-  onCartItemHandler(cart) {
-    this.cartItemEvent.emit(cart);
+  onCartItemHandler(itemName) {
+    this.cartItemEvent.emit(itemName);
     this.toastr.success('Item Added into Cart');
   }
 }
